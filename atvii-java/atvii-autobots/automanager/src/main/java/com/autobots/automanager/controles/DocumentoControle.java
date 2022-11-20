@@ -36,7 +36,7 @@ public class DocumentoControle {
 			return resposta;
 		} else {
 			adicionadorLink.adicionarLink(alvo);
-			ResponseEntity<List<Documento>> resposta = new ResponseEntity<List<Documento>>(HttpStatus.FOUND);
+			ResponseEntity<List<Documento>> resposta = new ResponseEntity<List<Documento>>(alvo.getDocumentos(),HttpStatus.FOUND);
 			return resposta;
 		}
 
